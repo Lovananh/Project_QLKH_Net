@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace App_QLKH.Connect
 {
-    internal class Ketnot
+    internal class Ketnoi
     {
+
     }
 }
