@@ -1,0 +1,10 @@
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.AssemblyReference.cache
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.Properties.Resources.resources
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.GenerateResource.cache
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.CoreCompileInputs.cache
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.Trangchu.resources
+D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\App_QLKH.exe.config
+D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\App_QLKH.exe
+D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\App_QLKH.pdb
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.exe
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.pdb

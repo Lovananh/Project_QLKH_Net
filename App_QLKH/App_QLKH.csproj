@@ -46,13 +46,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Connect\Ketnoi.cs" />
+    <Compile Include="Connect\Program.cs" />
+    <Compile Include="Control\Baocaosolieu.cs" />
+    <Compile Include="Control\Hanghoa.cs" />
+    <Compile Include="Control\Hangnhap.cs" />
+    <Compile Include="Control\Hangxuat.cs" />
+    <Compile Include="Control\Nhacungcap.cs" />
+    <Compile Include="Control\Nhanvien.cs" />
+    <Compile Include="Control\Users.cs" />
+    <Compile Include="View\fmBaocaosolieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\fmBaocaosolieu.Designer.cs">
+      <DependentUpon>fmBaocaosolieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="View\fmDangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fmDangky.Designer.cs">
+      <DependentUpon>fmDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fmDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fmDangnhap.Designer.cs">
+      <DependentUpon>fmDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fmNhacungcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fmNhacungcap.Designer.cs">
+      <DependentUpon>fmNhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fmNhanvien.Designer.cs">
+      <DependentUpon>fmNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Trangchu.Designer.cs">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -63,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Trangchu.resx">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +116,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon\box.png" />
+    <Content Include="Icon\export %281%29.png" />
+    <Content Include="Icon\export.png" />
+    <Content Include="Icon\icons8-edit-product-100.png" />
+    <Content Include="Icon\import %281%29.png" />
+    <Content Include="Icon\import %282%29.png" />
+    <Content Include="Icon\metrics %281%29.png" />
+    <Content Include="Icon\metrics %282%29.png" />
+    <Content Include="Icon\metrics.png" />
+    <Content Include="Icon\modification.png" />
+    <Content Include="Icon\out-of-stock.png" />
+    <Content Include="Icon\supplier %281%29.png" />
+    <Content Include="Icon\supplier.png" />
+    <Content Include="Icon\teamwork %281%29.png" />
+    <Content Include="Icon\teamwork.png" />
+    <Content Include="Icon\warehouse %281%29.png" />
+    <Content Include="Icon\warehouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
