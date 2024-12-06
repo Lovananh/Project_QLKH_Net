@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trangchu));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.toolNhacungcap = new System.Windows.Forms.ToolStripButton();
             this.toolNhanvien = new System.Windows.Forms.ToolStripButton();
             this.toolKhohang = new System.Windows.Forms.ToolStripButton();
@@ -52,7 +52,7 @@
             this.btnNhacungcap = new System.Windows.Forms.Button();
             this.btnBaocaosolieu = new System.Windows.Forms.Button();
             this.btnDangxuat = new System.Windows.Forms.Button();
-            this.toolStrip1.SuspendLayout();
+            this.toolStripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,18 +62,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // toolStrip1
+            // toolStripMenu
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toolStripMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStripMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolNhacungcap,
             this.toolNhanvien,
             this.toolKhohang});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1273, 33);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStripMenu.Location = new System.Drawing.Point(0, 0);
+            this.toolStripMenu.Name = "toolStripMenu";
+            this.toolStripMenu.Size = new System.Drawing.Size(1273, 38);
+            this.toolStripMenu.TabIndex = 0;
+            this.toolStripMenu.Text = "toolStripMenu";
             // 
             // toolNhacungcap
             // 
@@ -81,8 +82,9 @@
             this.toolNhacungcap.Image = ((System.Drawing.Image)(resources.GetObject("toolNhacungcap.Image")));
             this.toolNhacungcap.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolNhacungcap.Name = "toolNhacungcap";
-            this.toolNhacungcap.Size = new System.Drawing.Size(34, 28);
+            this.toolNhacungcap.Size = new System.Drawing.Size(34, 33);
             this.toolNhacungcap.Text = "Nhà cung cấp";
+            this.toolNhacungcap.Click += new System.EventHandler(this.toolNhacungcap_Click);
             // 
             // toolNhanvien
             // 
@@ -90,8 +92,9 @@
             this.toolNhanvien.Image = ((System.Drawing.Image)(resources.GetObject("toolNhanvien.Image")));
             this.toolNhanvien.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolNhanvien.Name = "toolNhanvien";
-            this.toolNhanvien.Size = new System.Drawing.Size(34, 28);
+            this.toolNhanvien.Size = new System.Drawing.Size(34, 33);
             this.toolNhanvien.Text = "Nhân viên";
+            this.toolNhanvien.Click += new System.EventHandler(this.toolNhanvien_Click);
             // 
             // toolKhohang
             // 
@@ -99,13 +102,14 @@
             this.toolKhohang.Image = ((System.Drawing.Image)(resources.GetObject("toolKhohang.Image")));
             this.toolKhohang.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolKhohang.Name = "toolKhohang";
-            this.toolKhohang.Size = new System.Drawing.Size(34, 28);
+            this.toolKhohang.Size = new System.Drawing.Size(34, 33);
             this.toolKhohang.Text = "Kho hàng";
+            this.toolKhohang.Click += new System.EventHandler(this.toolKhohang_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 33);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 38);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -127,7 +131,7 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.splitContainer1.Panel2.Controls.Add(this.panel_Body);
-            this.splitContainer1.Size = new System.Drawing.Size(1273, 718);
+            this.splitContainer1.Size = new System.Drawing.Size(1273, 713);
             this.splitContainer1.SplitterDistance = 219;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -143,7 +147,7 @@
             this.panel_Body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Body.Location = new System.Drawing.Point(0, 0);
             this.panel_Body.Name = "panel_Body";
-            this.panel_Body.Size = new System.Drawing.Size(1050, 718);
+            this.panel_Body.Size = new System.Drawing.Size(1050, 713);
             this.panel_Body.TabIndex = 0;
             // 
             // dataGridView1
@@ -159,7 +163,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(896, 260);
+            this.dataGridView1.Size = new System.Drawing.Size(896, 250);
             this.dataGridView1.TabIndex = 15;
             // 
             // panel4
@@ -376,11 +380,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1273, 751);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.toolStripMenu);
             this.Name = "Trangchu";
             this.Text = "Trang Chủ";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.toolStripMenu.ResumeLayout(false);
+            this.toolStripMenu.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -396,7 +400,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStripMenu;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ToolStripButton toolNhacungcap;
         private System.Windows.Forms.ToolStripButton toolNhanvien;

@@ -26,7 +26,13 @@ namespace App_QLKH
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
         {
-            if(currentFormChild != null)
+            //if (currentFormChild != null && currentFormChild.GetType() == childForm.GetType())
+            //{
+            //    // Nếu form đang mở là cùng loại với form mới, thoát khỏi phương thức
+            //    return;
+            //}
+
+            if (currentFormChild != null)
             {
                 currentFormChild.Close();
             }
@@ -80,6 +86,22 @@ namespace App_QLKH
         private void btnTrangchu_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Trangchu());
+
+        }
+
+        private void toolNhacungcap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new fmNhacungcap());
+        }
+
+        private void toolNhanvien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new fmNhanvien());
+        }
+
+        private void toolKhohang_Click(object sender, EventArgs e)
+        {
+            //OpenChildForm(new fmKhohang());
         }
     }
 }
