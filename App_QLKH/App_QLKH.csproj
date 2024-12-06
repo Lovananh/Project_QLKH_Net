@@ -101,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\fmNhanvien.resx">
+      <DependentUpon>fmNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>
     </EmbeddedResource>
