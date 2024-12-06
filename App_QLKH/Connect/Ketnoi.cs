@@ -10,7 +10,7 @@ namespace App_QLKH.Connect
 {
     internal class Ketnoi
     {
-        string conStr = "Data Source=LOVANANH-2812;Initial Catalog=Quanlykhohang;Integrated Security=True;Trust Server Certificate=True";
+        string conStr = "Data Source=LOVANANH-2812;Initial Catalog=Quanlykhohang;Integrated Security=True";
         SqlConnection conn;
 
         public Ketnoi()
