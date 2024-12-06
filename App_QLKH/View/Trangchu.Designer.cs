@@ -69,14 +69,14 @@
             this.toolKhohang});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1294, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(1294, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 33);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 38);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -97,7 +97,7 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1294, 683);
+            this.splitContainer1.Size = new System.Drawing.Size(1294, 678);
             this.splitContainer1.SplitterDistance = 223;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -107,7 +107,7 @@
             this.toolNhacungcap.Image = ((System.Drawing.Image)(resources.GetObject("toolNhacungcap.Image")));
             this.toolNhacungcap.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolNhacungcap.Name = "toolNhacungcap";
-            this.toolNhacungcap.Size = new System.Drawing.Size(34, 28);
+            this.toolNhacungcap.Size = new System.Drawing.Size(34, 33);
             this.toolNhacungcap.Text = "Nhà cung cấp";
             // 
             // toolNhanvien
@@ -153,7 +153,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 683);
+            this.panel1.Size = new System.Drawing.Size(1067, 678);
             this.panel1.TabIndex = 0;
             // 
             // lblHanghoa
@@ -320,7 +320,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(884, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(884, 220);
             this.dataGridView1.TabIndex = 15;
             // 
             // Trangchu
