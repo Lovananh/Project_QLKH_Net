@@ -65,9 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\BaocaosolieuController.cs" />
+    <Compile Include="Controller\HanghoaController.cs" />
     <Compile Include="Controller\NhacungcapController.cs" />
     <Compile Include="Controller\NhanvienController.cs" />
     <Compile Include="Model\Baocaosolieu.cs" />
+    <Compile Include="Model\Hanghoa.cs" />
     <Compile Include="Model\Ketnoi.cs" />
     <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\NhanVien.cs" />

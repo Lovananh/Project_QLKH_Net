@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trangchu));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.toolNhacungcap = new System.Windows.Forms.ToolStripButton();
             this.toolNhanvien = new System.Windows.Forms.ToolStripButton();
@@ -47,13 +47,17 @@
             this.btnTrangchu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_Body = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewHanghoa = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLoc = new System.Windows.Forms.Button();
             this.txtBLoc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblHangnhap = new System.Windows.Forms.Label();
+            this.lblHangxuat = new System.Windows.Forms.Label();
+            this.lblSohn = new System.Windows.Forms.Label();
+            this.lblSohx = new System.Windows.Forms.Label();
             this.toolStripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -61,7 +65,9 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_Body.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHanghoa)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripMenu
@@ -294,7 +300,7 @@
             // 
             // panel_Body
             // 
-            this.panel_Body.Controls.Add(this.dataGridView1);
+            this.panel_Body.Controls.Add(this.dataGridViewHanghoa);
             this.panel_Body.Controls.Add(this.panel4);
             this.panel_Body.Controls.Add(this.panel3);
             this.panel_Body.Controls.Add(this.panel2);
@@ -307,37 +313,38 @@
             this.panel_Body.Size = new System.Drawing.Size(1050, 718);
             this.panel_Body.TabIndex = 0;
             // 
-            // dataGridView1
+            // dataGridViewHanghoa
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridViewHanghoa.AllowUserToAddRows = false;
+            this.dataGridViewHanghoa.AllowUserToDeleteRows = false;
+            this.dataGridViewHanghoa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(87, 397);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(896, 255);
-            this.dataGridView1.TabIndex = 15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewHanghoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewHanghoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewHanghoa.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewHanghoa.Location = new System.Drawing.Point(87, 397);
+            this.dataGridViewHanghoa.Name = "dataGridViewHanghoa";
+            this.dataGridViewHanghoa.ReadOnly = true;
+            this.dataGridViewHanghoa.RowHeadersWidth = 62;
+            this.dataGridViewHanghoa.RowTemplate.Height = 28;
+            this.dataGridViewHanghoa.Size = new System.Drawing.Size(896, 250);
+            this.dataGridViewHanghoa.TabIndex = 15;
+            this.dataGridViewHanghoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHanghoa_CellContentClick);
             // 
             // panel4
             // 
@@ -350,6 +357,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.Controls.Add(this.lblSohx);
+            this.panel3.Controls.Add(this.lblHangxuat);
             this.panel3.Location = new System.Drawing.Point(414, 174);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(246, 194);
@@ -358,6 +367,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.Controls.Add(this.lblSohn);
+            this.panel2.Controls.Add(this.lblHangnhap);
             this.panel2.Location = new System.Drawing.Point(96, 174);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 194);
@@ -371,6 +382,7 @@
             this.btnLoc.TabIndex = 11;
             this.btnLoc.Text = "Lọc";
             this.btnLoc.UseVisualStyleBackColor = true;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // txtBLoc
             // 
@@ -392,6 +404,46 @@
             this.label1.Text = "Trang chủ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblHangnhap
+            // 
+            this.lblHangnhap.AutoSize = true;
+            this.lblHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHangnhap.Location = new System.Drawing.Point(16, 25);
+            this.lblHangnhap.Name = "lblHangnhap";
+            this.lblHangnhap.Size = new System.Drawing.Size(143, 29);
+            this.lblHangnhap.TabIndex = 0;
+            this.lblHangnhap.Text = "Hàng Nhập";
+            // 
+            // lblHangxuat
+            // 
+            this.lblHangxuat.AutoSize = true;
+            this.lblHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHangxuat.Location = new System.Drawing.Point(23, 25);
+            this.lblHangxuat.Name = "lblHangxuat";
+            this.lblHangxuat.Size = new System.Drawing.Size(134, 29);
+            this.lblHangxuat.TabIndex = 1;
+            this.lblHangxuat.Text = "Hàng Xuất";
+            // 
+            // lblSohn
+            // 
+            this.lblSohn.AutoSize = true;
+            this.lblSohn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSohn.Location = new System.Drawing.Point(16, 102);
+            this.lblSohn.Name = "lblSohn";
+            this.lblSohn.Size = new System.Drawing.Size(26, 26);
+            this.lblSohn.TabIndex = 1;
+            this.lblSohn.Text = "..";
+            // 
+            // lblSohx
+            // 
+            this.lblSohx.AutoSize = true;
+            this.lblSohx.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSohx.Location = new System.Drawing.Point(13, 102);
+            this.lblSohx.Name = "lblSohx";
+            this.lblSohx.Size = new System.Drawing.Size(26, 26);
+            this.lblSohx.TabIndex = 2;
+            this.lblSohx.Text = "..";
+            // 
             // Trangchu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -401,6 +453,7 @@
             this.Controls.Add(this.toolStripMenu);
             this.Name = "Trangchu";
             this.Text = "Trang Chủ";
+            this.Load += new System.EventHandler(this.Trangchu_Load);
             this.toolStripMenu.ResumeLayout(false);
             this.toolStripMenu.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -410,7 +463,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_Body.ResumeLayout(false);
             this.panel_Body.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHanghoa)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,7 +481,7 @@
         private System.Windows.Forms.ToolStripButton toolNhanvien;
         private System.Windows.Forms.ToolStripButton toolKhohang;
         private System.Windows.Forms.Panel panel_Body;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewHanghoa;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
@@ -441,6 +498,10 @@
         private System.Windows.Forms.Button btnKhohang;
         private System.Windows.Forms.Button btnHanghoa;
         private System.Windows.Forms.Button btnTrangchu;
+        private System.Windows.Forms.Label lblHangxuat;
+        private System.Windows.Forms.Label lblHangnhap;
+        private System.Windows.Forms.Label lblSohn;
+        private System.Windows.Forms.Label lblSohx;
     }
 }
 
