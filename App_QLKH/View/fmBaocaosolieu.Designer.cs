@@ -35,7 +35,6 @@
             this.dateTimePickerTungay = new System.Windows.Forms.DateTimePicker();
             this.lblDenngay = new System.Windows.Forms.Label();
             this.dateTimePickerDenngay = new System.Windows.Forms.DateTimePicker();
-            this.comboBoxBaocao = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +51,7 @@
             // 
             // reportViewer1
             // 
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "App_QLKH.ReportBaocaohanghoa.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(56, 318);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -60,7 +60,7 @@
             // 
             // BtnBaocao
             // 
-            this.BtnBaocao.Location = new System.Drawing.Point(449, 271);
+            this.BtnBaocao.Location = new System.Drawing.Point(449, 252);
             this.BtnBaocao.Name = "BtnBaocao";
             this.BtnBaocao.Size = new System.Drawing.Size(101, 41);
             this.BtnBaocao.TabIndex = 2;
@@ -83,6 +83,7 @@
             this.dateTimePickerTungay.Name = "dateTimePickerTungay";
             this.dateTimePickerTungay.Size = new System.Drawing.Size(221, 26);
             this.dateTimePickerTungay.TabIndex = 4;
+            this.dateTimePickerTungay.Value = new System.DateTime(2015, 12, 7, 17, 1, 0, 0);
             // 
             // lblDenngay
             // 
@@ -100,20 +101,11 @@
             this.dateTimePickerDenngay.Size = new System.Drawing.Size(222, 26);
             this.dateTimePickerDenngay.TabIndex = 6;
             // 
-            // comboBoxBaocao
-            // 
-            this.comboBoxBaocao.FormattingEnabled = true;
-            this.comboBoxBaocao.Location = new System.Drawing.Point(43, 82);
-            this.comboBoxBaocao.Name = "comboBoxBaocao";
-            this.comboBoxBaocao.Size = new System.Drawing.Size(292, 28);
-            this.comboBoxBaocao.TabIndex = 7;
-            // 
             // fmBaocaosolieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 666);
-            this.Controls.Add(this.comboBoxBaocao);
             this.Controls.Add(this.dateTimePickerDenngay);
             this.Controls.Add(this.lblDenngay);
             this.Controls.Add(this.dateTimePickerTungay);
@@ -138,6 +130,5 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerTungay;
         private System.Windows.Forms.Label lblDenngay;
         private System.Windows.Forms.DateTimePicker dateTimePickerDenngay;
-        private System.Windows.Forms.ComboBox comboBoxBaocao;
     }
 }

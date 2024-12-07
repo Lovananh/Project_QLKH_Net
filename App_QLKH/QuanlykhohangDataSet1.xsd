@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuanlykhohangDataSet1" targetNamespace="http://tempuri.org/QuanlykhohangDataSet1.xsd" xmlns:mstns="http://tempuri.org/QuanlykhohangDataSet1.xsd" xmlns="http://tempuri.org/QuanlykhohangDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanlykhohangConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanlykhohangConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.App_QLKH.Properties.Settings.GlobalReference.Default.QuanlykhohangConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PhieuNhapTableAdapter" GeneratorDataComponentClassName="PhieuNhapTableAdapter" Name="PhieuNhap" UserDataComponentName="PhieuNhapTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanlykhohangConnectionString (Settings)" DbObjectName="Quanlykhohang.dbo.PhieuNhap" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Sophieunhap, Soluongxn, Soluongtn, Dongia FROM dbo.PhieuNhap</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Sophieunhap" DataSetColumn="Sophieunhap" />
+              <Mapping SourceColumn="Soluongxn" DataSetColumn="Soluongxn" />
+              <Mapping SourceColumn="Soluongtn" DataSetColumn="Soluongtn" />
+              <Mapping SourceColumn="Dongia" DataSetColumn="Dongia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PhieuXuatTableAdapter" GeneratorDataComponentClassName="PhieuXuatTableAdapter" Name="PhieuXuat" UserDataComponentName="PhieuXuatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanlykhohangConnectionString (Settings)" DbObjectName="Quanlykhohang.dbo.PhieuXuat" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Sophieuxuat, Soluongxuat FROM dbo.PhieuXuat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Sophieuxuat" DataSetColumn="Sophieuxuat" />
+              <Mapping SourceColumn="Soluongxuat" DataSetColumn="Soluongxuat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuanlykhohangDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QuanlykhohangDataSet1" msprop:Generator_DataSetName="QuanlykhohangDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PhieuNhap" msprop:Generator_RowEvHandlerName="PhieuNhapRowChangeEventHandler" msprop:Generator_RowDeletedName="PhieuNhapRowDeleted" msprop:Generator_RowDeletingName="PhieuNhapRowDeleting" msprop:Generator_RowEvArgName="PhieuNhapRowChangeEvent" msprop:Generator_TablePropName="PhieuNhap" msprop:Generator_RowChangedName="PhieuNhapRowChanged" msprop:Generator_RowChangingName="PhieuNhapRowChanging" msprop:Generator_TableClassName="PhieuNhapDataTable" msprop:Generator_RowClassName="PhieuNhapRow" msprop:Generator_TableVarName="tablePhieuNhap" msprop:Generator_UserTableName="PhieuNhap">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sophieunhap" msprop:Generator_ColumnPropNameInRow="Sophieunhap" msprop:Generator_ColumnPropNameInTable="SophieunhapColumn" msprop:Generator_ColumnVarNameInTable="columnSophieunhap" msprop:Generator_UserColumnName="Sophieunhap" type="xs:int" />
+              <xs:element name="Soluongxn" msprop:Generator_ColumnPropNameInRow="Soluongxn" msprop:Generator_ColumnPropNameInTable="SoluongxnColumn" msprop:Generator_ColumnVarNameInTable="columnSoluongxn" msprop:Generator_UserColumnName="Soluongxn" type="xs:int" />
+              <xs:element name="Soluongtn" msprop:Generator_ColumnPropNameInRow="Soluongtn" msprop:Generator_ColumnPropNameInTable="SoluongtnColumn" msprop:Generator_ColumnVarNameInTable="columnSoluongtn" msprop:Generator_UserColumnName="Soluongtn" type="xs:int" />
+              <xs:element name="Dongia" msprop:Generator_ColumnPropNameInRow="Dongia" msprop:Generator_ColumnPropNameInTable="DongiaColumn" msprop:Generator_ColumnVarNameInTable="columnDongia" msprop:Generator_UserColumnName="Dongia" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PhieuXuat" msprop:Generator_RowEvHandlerName="PhieuXuatRowChangeEventHandler" msprop:Generator_RowDeletedName="PhieuXuatRowDeleted" msprop:Generator_RowDeletingName="PhieuXuatRowDeleting" msprop:Generator_RowEvArgName="PhieuXuatRowChangeEvent" msprop:Generator_TablePropName="PhieuXuat" msprop:Generator_RowChangedName="PhieuXuatRowChanged" msprop:Generator_RowChangingName="PhieuXuatRowChanging" msprop:Generator_TableClassName="PhieuXuatDataTable" msprop:Generator_RowClassName="PhieuXuatRow" msprop:Generator_TableVarName="tablePhieuXuat" msprop:Generator_UserTableName="PhieuXuat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sophieuxuat" msprop:Generator_ColumnPropNameInRow="Sophieuxuat" msprop:Generator_ColumnPropNameInTable="SophieuxuatColumn" msprop:Generator_ColumnVarNameInTable="columnSophieuxuat" msprop:Generator_UserColumnName="Sophieuxuat" type="xs:int" />
+              <xs:element name="Soluongxuat" msprop:Generator_ColumnPropNameInRow="Soluongxuat" msprop:Generator_ColumnPropNameInTable="SoluongxuatColumn" msprop:Generator_ColumnVarNameInTable="columnSoluongxuat" msprop:Generator_UserColumnName="Soluongxuat" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

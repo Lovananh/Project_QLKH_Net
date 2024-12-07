@@ -64,12 +64,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\BaocaosolieuController.cs" />
     <Compile Include="Controller\NhacungcapController.cs" />
     <Compile Include="Controller\NhanvienController.cs" />
+    <Compile Include="Model\Baocaosolieu.cs" />
     <Compile Include="Model\Ketnoi.cs" />
     <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\Program.cs" />
+    <Compile Include="QuanlykhohangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanlykhohangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanlykhohangDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanlykhohangDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\fmBaocaosolieu.cs">
       <SubType>Form</SubType>
@@ -101,6 +113,12 @@
     <Compile Include="View\fmNhanvien.Designer.cs">
       <DependentUpon>fmNhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\fmNhaphang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fmNhaphang.Designer.cs">
+      <DependentUpon>fmNhaphang.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Trangchu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,7 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ReportHangnhap.rdlc" />
+    <EmbeddedResource Include="ReportBaocaohanghoa.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\fmBaocaosolieu.resx">
       <DependentUpon>fmBaocaosolieu.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,10 +147,14 @@
     <EmbeddedResource Include="View\fmNhanvien.resx">
       <DependentUpon>fmNhanvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\fmNhaphang.resx">
+      <DependentUpon>fmNhaphang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\App_QLKH.View.fmBaocaosolieu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,6 +164,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanlykhohangDataSet.xsc">
+      <DependentUpon>QuanlykhohangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlykhohangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanlykhohangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanlykhohangDataSet.xss">
+      <DependentUpon>QuanlykhohangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlykhohangDataSet1.xsc">
+      <DependentUpon>QuanlykhohangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlykhohangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanlykhohangDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanlykhohangDataSet1.xss">
+      <DependentUpon>QuanlykhohangDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
