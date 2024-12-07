@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace App_QLKH.View
 {
-    public partial class fmBaocaosolieu : Form
+    public partial class fmNhaphang : Form
     {
-        public fmBaocaosolieu()
+        public fmNhaphang()
         {
             InitializeComponent();
-        }
-
-        private void fmBaocaosolieu_Load(object sender, EventArgs e)
-        {
-
-            this.reportViewer1.RefreshReport();
-        }
-
-        private void BtnBaocao_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
