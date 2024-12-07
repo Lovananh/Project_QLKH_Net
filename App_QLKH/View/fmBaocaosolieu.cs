@@ -16,5 +16,11 @@ namespace App_QLKH.View
         {
             InitializeComponent();
         }
+
+        private void fmBaocaosolieu_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
