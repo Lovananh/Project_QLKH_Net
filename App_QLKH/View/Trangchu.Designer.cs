@@ -29,37 +29,45 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trangchu));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.toolNhacungcap = new System.Windows.Forms.ToolStripButton();
             this.toolNhanvien = new System.Windows.Forms.ToolStripButton();
             this.toolKhohang = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnDangxuat = new System.Windows.Forms.Button();
+            this.btnBaocaosolieu = new System.Windows.Forms.Button();
+            this.btnNhacungcap = new System.Windows.Forms.Button();
+            this.btnNhanvien = new System.Windows.Forms.Button();
+            this.btnHangxuat = new System.Windows.Forms.Button();
+            this.btnHangnhap = new System.Windows.Forms.Button();
+            this.btnKhohang = new System.Windows.Forms.Button();
+            this.btnHanghoa = new System.Windows.Forms.Button();
+            this.btnTrangchu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_Body = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewHanghoa = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLoc = new System.Windows.Forms.Button();
             this.txtBLoc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTrangchu = new System.Windows.Forms.Button();
-            this.btnHanghoa = new System.Windows.Forms.Button();
-            this.btnKhohang = new System.Windows.Forms.Button();
-            this.btnHangnhap = new System.Windows.Forms.Button();
-            this.btnHangxuat = new System.Windows.Forms.Button();
-            this.btnNhanvien = new System.Windows.Forms.Button();
-            this.btnNhacungcap = new System.Windows.Forms.Button();
-            this.btnBaocaosolieu = new System.Windows.Forms.Button();
-            this.btnDangxuat = new System.Windows.Forms.Button();
+            this.lblHangnhap = new System.Windows.Forms.Label();
+            this.lblHangxuat = new System.Windows.Forms.Label();
+            this.lblSohn = new System.Windows.Forms.Label();
+            this.lblSohx = new System.Windows.Forms.Label();
             this.toolStripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel_Body.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_Body.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHanghoa)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripMenu
@@ -72,7 +80,7 @@
             this.toolKhohang});
             this.toolStripMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripMenu.Name = "toolStripMenu";
-            this.toolStripMenu.Size = new System.Drawing.Size(1273, 38);
+            this.toolStripMenu.Size = new System.Drawing.Size(1273, 33);
             this.toolStripMenu.TabIndex = 0;
             this.toolStripMenu.Text = "toolStripMenu";
             // 
@@ -82,7 +90,7 @@
             this.toolNhacungcap.Image = ((System.Drawing.Image)(resources.GetObject("toolNhacungcap.Image")));
             this.toolNhacungcap.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolNhacungcap.Name = "toolNhacungcap";
-            this.toolNhacungcap.Size = new System.Drawing.Size(34, 33);
+            this.toolNhacungcap.Size = new System.Drawing.Size(34, 28);
             this.toolNhacungcap.Text = "Nhà cung cấp";
             this.toolNhacungcap.Click += new System.EventHandler(this.toolNhacungcap_Click);
             // 
@@ -92,7 +100,7 @@
             this.toolNhanvien.Image = ((System.Drawing.Image)(resources.GetObject("toolNhanvien.Image")));
             this.toolNhanvien.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolNhanvien.Name = "toolNhanvien";
-            this.toolNhanvien.Size = new System.Drawing.Size(34, 33);
+            this.toolNhanvien.Size = new System.Drawing.Size(34, 28);
             this.toolNhanvien.Text = "Nhân viên";
             this.toolNhanvien.Click += new System.EventHandler(this.toolNhanvien_Click);
             // 
@@ -102,14 +110,14 @@
             this.toolKhohang.Image = ((System.Drawing.Image)(resources.GetObject("toolKhohang.Image")));
             this.toolKhohang.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolKhohang.Name = "toolKhohang";
-            this.toolKhohang.Size = new System.Drawing.Size(34, 33);
+            this.toolKhohang.Size = new System.Drawing.Size(34, 28);
             this.toolKhohang.Text = "Kho hàng";
             this.toolKhohang.Click += new System.EventHandler(this.toolKhohang_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 38);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 33);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -131,13 +139,168 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.splitContainer1.Panel2.Controls.Add(this.panel_Body);
-            this.splitContainer1.Size = new System.Drawing.Size(1273, 713);
+            this.splitContainer1.Size = new System.Drawing.Size(1273, 718);
             this.splitContainer1.SplitterDistance = 219;
             this.splitContainer1.TabIndex = 1;
             // 
+            // btnDangxuat
+            // 
+            this.btnDangxuat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDangxuat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDangxuat.FlatAppearance.BorderSize = 0;
+            this.btnDangxuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 619);
+            this.btnDangxuat.Name = "btnDangxuat";
+            this.btnDangxuat.Size = new System.Drawing.Size(219, 60);
+            this.btnDangxuat.TabIndex = 9;
+            this.btnDangxuat.Text = "Đăng xuất";
+            this.btnDangxuat.UseVisualStyleBackColor = true;
+            // 
+            // btnBaocaosolieu
+            // 
+            this.btnBaocaosolieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaocaosolieu.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBaocaosolieu.FlatAppearance.BorderSize = 0;
+            this.btnBaocaosolieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnBaocaosolieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaocaosolieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaocaosolieu.Location = new System.Drawing.Point(0, 559);
+            this.btnBaocaosolieu.Name = "btnBaocaosolieu";
+            this.btnBaocaosolieu.Size = new System.Drawing.Size(219, 60);
+            this.btnBaocaosolieu.TabIndex = 8;
+            this.btnBaocaosolieu.Text = "Báo cáo số liệu";
+            this.btnBaocaosolieu.UseVisualStyleBackColor = true;
+            this.btnBaocaosolieu.Click += new System.EventHandler(this.btnBaocaosolieu_Click);
+            // 
+            // btnNhacungcap
+            // 
+            this.btnNhacungcap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNhacungcap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNhacungcap.FlatAppearance.BorderSize = 0;
+            this.btnNhacungcap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnNhacungcap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhacungcap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhacungcap.Location = new System.Drawing.Point(0, 499);
+            this.btnNhacungcap.Name = "btnNhacungcap";
+            this.btnNhacungcap.Size = new System.Drawing.Size(219, 60);
+            this.btnNhacungcap.TabIndex = 7;
+            this.btnNhacungcap.Text = "Nhà cung cấp";
+            this.btnNhacungcap.UseVisualStyleBackColor = true;
+            this.btnNhacungcap.Click += new System.EventHandler(this.btnNhacungcap_Click);
+            // 
+            // btnNhanvien
+            // 
+            this.btnNhanvien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNhanvien.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNhanvien.FlatAppearance.BorderSize = 0;
+            this.btnNhanvien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnNhanvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanvien.Location = new System.Drawing.Point(0, 439);
+            this.btnNhanvien.Name = "btnNhanvien";
+            this.btnNhanvien.Size = new System.Drawing.Size(219, 60);
+            this.btnNhanvien.TabIndex = 6;
+            this.btnNhanvien.Text = "Nhân viên";
+            this.btnNhanvien.UseVisualStyleBackColor = true;
+            this.btnNhanvien.Click += new System.EventHandler(this.btnNhanvien_Click);
+            // 
+            // btnHangxuat
+            // 
+            this.btnHangxuat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHangxuat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnHangxuat.FlatAppearance.BorderSize = 0;
+            this.btnHangxuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnHangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHangxuat.Location = new System.Drawing.Point(0, 379);
+            this.btnHangxuat.Name = "btnHangxuat";
+            this.btnHangxuat.Size = new System.Drawing.Size(219, 60);
+            this.btnHangxuat.TabIndex = 5;
+            this.btnHangxuat.Text = "Hàng xuất";
+            this.btnHangxuat.UseVisualStyleBackColor = true;
+            this.btnHangxuat.Click += new System.EventHandler(this.btnHangxuat_Click);
+            // 
+            // btnHangnhap
+            // 
+            this.btnHangnhap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHangnhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnHangnhap.FlatAppearance.BorderSize = 0;
+            this.btnHangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnHangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHangnhap.Location = new System.Drawing.Point(0, 319);
+            this.btnHangnhap.Name = "btnHangnhap";
+            this.btnHangnhap.Size = new System.Drawing.Size(219, 60);
+            this.btnHangnhap.TabIndex = 4;
+            this.btnHangnhap.Text = "Hàng nhập";
+            this.btnHangnhap.UseVisualStyleBackColor = true;
+            this.btnHangnhap.Click += new System.EventHandler(this.btnHangnhap_Click);
+            // 
+            // btnKhohang
+            // 
+            this.btnKhohang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhohang.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnKhohang.FlatAppearance.BorderSize = 0;
+            this.btnKhohang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnKhohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhohang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhohang.Location = new System.Drawing.Point(0, 259);
+            this.btnKhohang.Name = "btnKhohang";
+            this.btnKhohang.Size = new System.Drawing.Size(219, 60);
+            this.btnKhohang.TabIndex = 3;
+            this.btnKhohang.Text = "Kho hàng";
+            this.btnKhohang.UseVisualStyleBackColor = true;
+            this.btnKhohang.Click += new System.EventHandler(this.btnKhohang_Click);
+            // 
+            // btnHanghoa
+            // 
+            this.btnHanghoa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHanghoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnHanghoa.FlatAppearance.BorderSize = 0;
+            this.btnHanghoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnHanghoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHanghoa.Location = new System.Drawing.Point(0, 199);
+            this.btnHanghoa.Name = "btnHanghoa";
+            this.btnHanghoa.Size = new System.Drawing.Size(219, 60);
+            this.btnHanghoa.TabIndex = 2;
+            this.btnHanghoa.Text = "Hàng hóa";
+            this.btnHanghoa.UseVisualStyleBackColor = true;
+            this.btnHanghoa.Click += new System.EventHandler(this.btnHanghoa_Click);
+            // 
+            // btnTrangchu
+            // 
+            this.btnTrangchu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTrangchu.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTrangchu.FlatAppearance.BorderSize = 0;
+            this.btnTrangchu.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnTrangchu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnTrangchu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangchu.Location = new System.Drawing.Point(0, 139);
+            this.btnTrangchu.Name = "btnTrangchu";
+            this.btnTrangchu.Size = new System.Drawing.Size(219, 60);
+            this.btnTrangchu.TabIndex = 1;
+            this.btnTrangchu.Text = "Trang chủ";
+            this.btnTrangchu.UseVisualStyleBackColor = true;
+            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(219, 139);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel_Body
             // 
-            this.panel_Body.Controls.Add(this.dataGridView1);
+            this.panel_Body.Controls.Add(this.dataGridViewHanghoa);
             this.panel_Body.Controls.Add(this.panel4);
             this.panel_Body.Controls.Add(this.panel3);
             this.panel_Body.Controls.Add(this.panel2);
@@ -147,24 +310,41 @@
             this.panel_Body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Body.Location = new System.Drawing.Point(0, 0);
             this.panel_Body.Name = "panel_Body";
-            this.panel_Body.Size = new System.Drawing.Size(1050, 713);
+            this.panel_Body.Size = new System.Drawing.Size(1050, 718);
             this.panel_Body.TabIndex = 0;
             // 
-            // dataGridView1
+            // dataGridViewHanghoa
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridViewHanghoa.AllowUserToAddRows = false;
+            this.dataGridViewHanghoa.AllowUserToDeleteRows = false;
+            this.dataGridViewHanghoa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(87, 397);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(896, 250);
-            this.dataGridView1.TabIndex = 15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewHanghoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewHanghoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewHanghoa.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewHanghoa.Location = new System.Drawing.Point(87, 397);
+            this.dataGridViewHanghoa.Name = "dataGridViewHanghoa";
+            this.dataGridViewHanghoa.ReadOnly = true;
+            this.dataGridViewHanghoa.RowHeadersWidth = 62;
+            this.dataGridViewHanghoa.RowTemplate.Height = 28;
+            this.dataGridViewHanghoa.Size = new System.Drawing.Size(896, 250);
+            this.dataGridViewHanghoa.TabIndex = 15;
+            this.dataGridViewHanghoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHanghoa_CellContentClick);
             // 
             // panel4
             // 
@@ -177,6 +357,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.Controls.Add(this.lblSohx);
+            this.panel3.Controls.Add(this.lblHangxuat);
             this.panel3.Location = new System.Drawing.Point(414, 174);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(246, 194);
@@ -185,6 +367,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.Controls.Add(this.lblSohn);
+            this.panel2.Controls.Add(this.lblHangnhap);
             this.panel2.Location = new System.Drawing.Point(96, 174);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 194);
@@ -198,6 +382,7 @@
             this.btnLoc.TabIndex = 11;
             this.btnLoc.Text = "Lọc";
             this.btnLoc.UseVisualStyleBackColor = true;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // txtBLoc
             // 
@@ -219,160 +404,45 @@
             this.label1.Text = "Trang chủ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // lblHangnhap
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 139);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblHangnhap.AutoSize = true;
+            this.lblHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHangnhap.Location = new System.Drawing.Point(16, 25);
+            this.lblHangnhap.Name = "lblHangnhap";
+            this.lblHangnhap.Size = new System.Drawing.Size(143, 29);
+            this.lblHangnhap.TabIndex = 0;
+            this.lblHangnhap.Text = "Hàng Nhập";
             // 
-            // btnTrangchu
+            // lblHangxuat
             // 
-            this.btnTrangchu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTrangchu.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnTrangchu.FlatAppearance.BorderSize = 0;
-            this.btnTrangchu.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.btnTrangchu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnTrangchu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrangchu.Location = new System.Drawing.Point(0, 139);
-            this.btnTrangchu.Name = "btnTrangchu";
-            this.btnTrangchu.Size = new System.Drawing.Size(219, 60);
-            this.btnTrangchu.TabIndex = 1;
-            this.btnTrangchu.Text = "Trang chủ";
-            this.btnTrangchu.UseVisualStyleBackColor = true;
-            this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click);
+            this.lblHangxuat.AutoSize = true;
+            this.lblHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHangxuat.Location = new System.Drawing.Point(23, 25);
+            this.lblHangxuat.Name = "lblHangxuat";
+            this.lblHangxuat.Size = new System.Drawing.Size(134, 29);
+            this.lblHangxuat.TabIndex = 1;
+            this.lblHangxuat.Text = "Hàng Xuất";
             // 
-            // btnHanghoa
+            // lblSohn
             // 
-            this.btnHanghoa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHanghoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnHanghoa.FlatAppearance.BorderSize = 0;
-            this.btnHanghoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnHanghoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHanghoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHanghoa.Location = new System.Drawing.Point(0, 199);
-            this.btnHanghoa.Name = "btnHanghoa";
-            this.btnHanghoa.Size = new System.Drawing.Size(219, 60);
-            this.btnHanghoa.TabIndex = 2;
-            this.btnHanghoa.Text = "Hàng hóa";
-            this.btnHanghoa.UseVisualStyleBackColor = true;
-            this.btnHanghoa.Click += new System.EventHandler(this.btnHanghoa_Click);
+            this.lblSohn.AutoSize = true;
+            this.lblSohn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSohn.Location = new System.Drawing.Point(16, 102);
+            this.lblSohn.Name = "lblSohn";
+            this.lblSohn.Size = new System.Drawing.Size(26, 26);
+            this.lblSohn.TabIndex = 1;
+            this.lblSohn.Text = "..";
             // 
-            // btnKhohang
+            // lblSohx
             // 
-            this.btnKhohang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKhohang.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnKhohang.FlatAppearance.BorderSize = 0;
-            this.btnKhohang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnKhohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhohang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhohang.Location = new System.Drawing.Point(0, 259);
-            this.btnKhohang.Name = "btnKhohang";
-            this.btnKhohang.Size = new System.Drawing.Size(219, 60);
-            this.btnKhohang.TabIndex = 3;
-            this.btnKhohang.Text = "Kho hàng";
-            this.btnKhohang.UseVisualStyleBackColor = true;
-            this.btnKhohang.Click += new System.EventHandler(this.btnKhohang_Click);
-            // 
-            // btnHangnhap
-            // 
-            this.btnHangnhap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHangnhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnHangnhap.FlatAppearance.BorderSize = 0;
-            this.btnHangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnHangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHangnhap.Location = new System.Drawing.Point(0, 319);
-            this.btnHangnhap.Name = "btnHangnhap";
-            this.btnHangnhap.Size = new System.Drawing.Size(219, 60);
-            this.btnHangnhap.TabIndex = 4;
-            this.btnHangnhap.Text = "Hàng nhập";
-            this.btnHangnhap.UseVisualStyleBackColor = true;
-            this.btnHangnhap.Click += new System.EventHandler(this.btnHangnhap_Click);
-            // 
-            // btnHangxuat
-            // 
-            this.btnHangxuat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHangxuat.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnHangxuat.FlatAppearance.BorderSize = 0;
-            this.btnHangxuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnHangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHangxuat.Location = new System.Drawing.Point(0, 379);
-            this.btnHangxuat.Name = "btnHangxuat";
-            this.btnHangxuat.Size = new System.Drawing.Size(219, 60);
-            this.btnHangxuat.TabIndex = 5;
-            this.btnHangxuat.Text = "Hàng xuất";
-            this.btnHangxuat.UseVisualStyleBackColor = true;
-            this.btnHangxuat.Click += new System.EventHandler(this.btnHangxuat_Click);
-            // 
-            // btnNhanvien
-            // 
-            this.btnNhanvien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNhanvien.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnNhanvien.FlatAppearance.BorderSize = 0;
-            this.btnNhanvien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnNhanvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhanvien.Location = new System.Drawing.Point(0, 439);
-            this.btnNhanvien.Name = "btnNhanvien";
-            this.btnNhanvien.Size = new System.Drawing.Size(219, 60);
-            this.btnNhanvien.TabIndex = 6;
-            this.btnNhanvien.Text = "Nhân viên";
-            this.btnNhanvien.UseVisualStyleBackColor = true;
-            this.btnNhanvien.Click += new System.EventHandler(this.btnNhanvien_Click);
-            // 
-            // btnNhacungcap
-            // 
-            this.btnNhacungcap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNhacungcap.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnNhacungcap.FlatAppearance.BorderSize = 0;
-            this.btnNhacungcap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnNhacungcap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhacungcap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhacungcap.Location = new System.Drawing.Point(0, 499);
-            this.btnNhacungcap.Name = "btnNhacungcap";
-            this.btnNhacungcap.Size = new System.Drawing.Size(219, 60);
-            this.btnNhacungcap.TabIndex = 7;
-            this.btnNhacungcap.Text = "Nhà cung cấp";
-            this.btnNhacungcap.UseVisualStyleBackColor = true;
-            this.btnNhacungcap.Click += new System.EventHandler(this.btnNhacungcap_Click);
-            // 
-            // btnBaocaosolieu
-            // 
-            this.btnBaocaosolieu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBaocaosolieu.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBaocaosolieu.FlatAppearance.BorderSize = 0;
-            this.btnBaocaosolieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnBaocaosolieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaocaosolieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaocaosolieu.Location = new System.Drawing.Point(0, 559);
-            this.btnBaocaosolieu.Name = "btnBaocaosolieu";
-            this.btnBaocaosolieu.Size = new System.Drawing.Size(219, 60);
-            this.btnBaocaosolieu.TabIndex = 8;
-            this.btnBaocaosolieu.Text = "Báo cáo số liệu";
-            this.btnBaocaosolieu.UseVisualStyleBackColor = true;
-            this.btnBaocaosolieu.Click += new System.EventHandler(this.btnBaocaosolieu_Click);
-            // 
-            // btnDangxuat
-            // 
-            this.btnDangxuat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDangxuat.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnDangxuat.FlatAppearance.BorderSize = 0;
-            this.btnDangxuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 619);
-            this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(219, 60);
-            this.btnDangxuat.TabIndex = 9;
-            this.btnDangxuat.Text = "Đăng xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.lblSohx.AutoSize = true;
+            this.lblSohx.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSohx.Location = new System.Drawing.Point(13, 102);
+            this.lblSohx.Name = "lblSohx";
+            this.lblSohx.Size = new System.Drawing.Size(26, 26);
+            this.lblSohx.TabIndex = 2;
+            this.lblSohx.Text = "..";
             // 
             // Trangchu
             // 
@@ -383,16 +453,21 @@
             this.Controls.Add(this.toolStripMenu);
             this.Name = "Trangchu";
             this.Text = "Trang Chủ";
+            this.Load += new System.EventHandler(this.Trangchu_Load);
             this.toolStripMenu.ResumeLayout(false);
             this.toolStripMenu.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_Body.ResumeLayout(false);
             this.panel_Body.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHanghoa)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,7 +481,7 @@
         private System.Windows.Forms.ToolStripButton toolNhanvien;
         private System.Windows.Forms.ToolStripButton toolKhohang;
         private System.Windows.Forms.Panel panel_Body;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewHanghoa;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
@@ -423,6 +498,10 @@
         private System.Windows.Forms.Button btnKhohang;
         private System.Windows.Forms.Button btnHanghoa;
         private System.Windows.Forms.Button btnTrangchu;
+        private System.Windows.Forms.Label lblHangxuat;
+        private System.Windows.Forms.Label lblHangnhap;
+        private System.Windows.Forms.Label lblSohn;
+        private System.Windows.Forms.Label lblSohx;
     }
 }
 
