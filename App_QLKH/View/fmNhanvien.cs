@@ -7,89 +7,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using App_QLKH.Connect;
+using App_QLKH.Controller;
+using App_QLKH.Model;
 
 namespace App_QLKH.View
 {
     public partial class fmNhanvien : Form
     {
+        private NhanvienController controller = new NhanvienController();
         public fmNhanvien()
         {
             InitializeComponent();
-            dataGridViewNhanvien.CellClick += dataGridViewNhanvien_CellContentClick;
+            //dataGridViewNhanvien.CellClick += dataGridViewNhanvien_CellContentClick;
+            getData();
         }
 
-        Ketnoi kn = new Ketnoi();
         public void getData()
         {
-            string query = "select*from NhanVien";
-            DataSet ds = kn.Laydulieu(query);
-            dataGridViewNhanvien.DataSource = ds.Tables[0];
-
+            dataGridViewNhanvien.DataSource = controller.GetAllNhanVien().Tables[0];
+            //btnLammoi.PerformClick();
         }
 
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
-            string query = string.Format(
-              "select NhanVien.* from NhanVien where NhanVien.Tennv like N'%{0}%'",
-              txtTimkiem.Text
-          );
-
-            DataSet ds = kn.Laydulieu(query);
-            dataGridViewNhanvien.DataSource = ds.Tables[0];
-    }
+            dataGridViewNhanvien.DataSource = controller.SearchNhanVien(txtTimkiem.Text).Tables[0];
+        }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string query = string.Format(
-                 "INSERT INTO Nhanvien (Manv, Tennv, Chucvu, Sodienthoai, Email, Diachi, Gioitinh) " +
-                 "VALUES (N'{0}', N'{1}', N'{2}', N'{3}', N'{4}', N'{5}', N'{6}')",
-                txtManv.Text,
-                txtTennv.Text,
-                txtChucvu.Text,
-                txtSodienthoai.Text,
-                txtEmail.Text,
-                txtDiachi.Text,
-                txtGioitinh.Text
-             );
-            if (string.IsNullOrEmpty(txtManv.Text) || string.IsNullOrEmpty(txtTennv.Text))
+            if (controller.AddNhanVien(
+                    txtManv.Text, txtTennv.Text, txtChucvu.Text,
+                    txtSodienthoai.Text, txtEmail.Text, txtDiachi.Text, txtGioitinh.Text))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
-                return;
-            }
-            if (!txtEmail.Text.Contains("@"))
-            {
-                MessageBox.Show("Email không hợp lệ!");
-                return;
-            }
-            if (kn.ThucThi(query) == true)
-            {
-                MessageBox.Show("Thêm thành công !");
-                btnLammoi.PerformClick();
+                MessageBox.Show("Thêm thành công!");
+                getData();
             }
             else
             {
-                MessageBox.Show("thêm thất bại !");
+                MessageBox.Show("Thêm thất bại!");
             }
-
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string query = string.Format(
-                "UPDATE NhanVien SET Tennv = N'{1}', Chucvu = N'{2}', Sodienthoai = N'{3}', Email = N'{4}', Diachi = N'{5}', Gioitinh = N'{6}' where Manv = N'{0}'",
-                txtManv.Text,
-                txtTennv.Text,
-                txtChucvu.Text,
-                txtSodienthoai.Text,
-                txtEmail.Text,
-                txtDiachi.Text,
-                txtGioitinh.Text
-            );
-            if (kn.ThucThi(query) == true)
+            if (controller.UpdateNhanVien(
+                    txtManv.Text, txtTennv.Text, txtChucvu.Text,
+                    txtSodienthoai.Text, txtEmail.Text, txtDiachi.Text, txtGioitinh.Text))
             {
                 MessageBox.Show("Sửa thành công!");
-                btnLammoi.PerformClick();
+                getData();
             }
             else
             {
@@ -99,11 +65,10 @@ namespace App_QLKH.View
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string query = string.Format("DELETE FROM NhanVien WHERE Manv = N'{0}'", txtManv.Text);
-            if (kn.ThucThi(query) == true)
+            if (controller.DeleteNhanVien(txtManv.Text))
             {
                 MessageBox.Show("Xóa thành công!");
-                btnLammoi.PerformClick();
+                getData();
             }
             else
             {

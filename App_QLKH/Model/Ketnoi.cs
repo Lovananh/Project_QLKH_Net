@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App_QLKH.Connect
+namespace App_QLKH.Model
 {
     internal class Ketnoi
     {

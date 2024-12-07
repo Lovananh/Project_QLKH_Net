@@ -46,15 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connect\Ketnoi.cs" />
-    <Compile Include="Connect\Program.cs" />
-    <Compile Include="Control\Baocaosolieu.cs" />
-    <Compile Include="Control\Hanghoa.cs" />
-    <Compile Include="Control\Hangnhap.cs" />
-    <Compile Include="Control\Hangxuat.cs" />
-    <Compile Include="Control\Nhacungcap.cs" />
-    <Compile Include="Control\Nhanvien.cs" />
-    <Compile Include="Control\Users.cs" />
+    <Compile Include="Controller\NhacungcapController.cs" />
+    <Compile Include="Controller\NhanvienController.cs" />
+    <Compile Include="Model\Ketnoi.cs" />
+    <Compile Include="Model\NhaCungCap.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\Program.cs" />
     <Compile Include="View\fmBaocaosolieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\fmBaocaosolieu.resx">
+      <DependentUpon>fmBaocaosolieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\fmNhacungcap.resx">
       <DependentUpon>fmNhacungcap.cs</DependentUpon>
     </EmbeddedResource>

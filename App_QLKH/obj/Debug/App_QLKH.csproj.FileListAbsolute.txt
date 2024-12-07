@@ -10,3 +10,4 @@ D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.exe
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.pdb
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhanvien.resources
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhacungcap.resources
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmBaocaosolieu.resources

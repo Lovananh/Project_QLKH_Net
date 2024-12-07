@@ -7,101 +7,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using App_QLKH.Connect;
+using App_QLKH.Controller;
+using App_QLKH.Model;
 
 namespace App_QLKH.View
 {
     public partial class fmNhacungcap : Form
     {
+        private NhacungcapController controllern = new NhacungcapController();
         public fmNhacungcap()
         {
             InitializeComponent();
-            dataGridViewNhacungcap.CellClick += dataGridViewNhacungcap_CellContentClick;
+            //dataGridViewNhacungcap.CellClick += dataGridViewNhacungcap_CellContentClick;
+            getData();
         }
-        Ketnoi kn = new Ketnoi();
-
         public void getData()
         {
-            string query = "SELECT*FROM NhaCungCap";
-            DataSet ds = kn.Laydulieu(query);
-            dataGridViewNhacungcap.DataSource = ds.Tables[0];
+            dataGridViewNhacungcap.DataSource = controllern.GetAllNhaCungCap().Tables[0];
         }
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
-            string query = string.Format(
-            "select NhaCungCap.* from NhaCungCap where NhaCungCap.Tenncc like N'%{0}%'",
-            txtTimkiem.Text
-        );
-
-            DataSet ds = kn.Laydulieu(query);
-            dataGridViewNhacungcap.DataSource = ds.Tables[0];
+            dataGridViewNhacungcap.DataSource = controllern.SearchNhacungcap(txtTimkiem.Text).Tables[0];
         }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-
-            string query = string.Format(
-                 "INSERT INTO NhaCungCap (Mancc, Tenncc, Diachi, Email, Sodienthoai) " +
-                 "VALUES (N'{0}', N'{1}', N'{2}', N'{3}', N'{4}')",
-                txtMancc.Text,
-                txtTenncc.Text,
-                txtDiachi.Text,
-                txtEmail.Text,
-                txtSodienthoai.Text
-             );
-            if (string.IsNullOrEmpty(txtMancc.Text) || string.IsNullOrEmpty(txtTenncc.Text))
+            if (controllern.AddNhacungcap(
+                    txtMancc.Text, txtTenncc.Text,
+                    txtDiachi.Text, txtEmail.Text ,txtSodienthoai.Text))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
-                return;
-            }
-            if (!txtEmail.Text.Contains("@"))
-            {
-                MessageBox.Show("Email không hợp lệ!");
-                return;
-            }
-            if (kn.ThucThi(query) == true)
-            {
-                MessageBox.Show("Thêm thành công !");
-                btnLammoi.PerformClick();
+                MessageBox.Show("Thêm thành công!");
+                getData();
             }
             else
             {
-                MessageBox.Show("thêm thất bại !");
+                MessageBox.Show("Thêm thất bại!");
             }
-
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string query = string.Format(
-                "UPDATE NhaCungCap SET Tenncc = N'{1}', Diachi = N'{2}', Email = N'{3}', Sodienthoai = N'{4}', where Mancc = N'{0}'",
-                txtMancc.Text,
-                txtTenncc.Text,
-                txtDiachi.Text,
-                txtEmail.Text,
-                txtSodienthoai.Text
-            );
-            if (kn.ThucThi(query) == true)
+        if (controllern.UpdateNhacungcap(
+                txtMancc.Text, txtTenncc.Text,
+                txtDiachi.Text, txtEmail.Text, txtSodienthoai.Text))
             {
-                MessageBox.Show("Sửa thành công!");
-                btnLammoi.PerformClick();
-            }
-            else
-            {
-                MessageBox.Show("Sửa thất bại!");
-            }
+            MessageBox.Show("Sửa thành công!");
+            getData();
         }
+        else
+        {
+            MessageBox.Show("Sửa thất bại!");
+        }
+    }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string query = string.Format(
-                "DELETE FROM NhaCungCap WHERE Mancc = '{0}'",
-                txtMancc.Text
-            );
-            if (kn.ThucThi(query) == true)
+            if (controllern.DeleteNhacungcap(txtMancc.Text))
             {
                 MessageBox.Show("Xóa thành công!");
-                btnLammoi.PerformClick();
+                getData();
             }
             else
             {
@@ -135,9 +98,9 @@ namespace App_QLKH.View
                 btnXoa.Enabled = true;
                 txtMancc.Text = dataGridViewNhacungcap.Rows[r].Cells["Mancc"].Value.ToString();
                 txtTenncc.Text = dataGridViewNhacungcap.Rows[r].Cells["Tenncc"].Value.ToString();
-                txtSodienthoai.Text = dataGridViewNhacungcap.Rows[r].Cells["Sodienthoai"].Value.ToString();
-                txtEmail.Text = dataGridViewNhacungcap.Rows[r].Cells["Email"].Value.ToString();
                 txtDiachi.Text = dataGridViewNhacungcap.Rows[r].Cells["Diachi"].Value.ToString();
+                txtEmail.Text = dataGridViewNhacungcap.Rows[r].Cells["Email"].Value.ToString();
+                txtSodienthoai.Text = dataGridViewNhacungcap.Rows[r].Cells["Sodienthoai"].Value.ToString();                     
             }
         }
 
