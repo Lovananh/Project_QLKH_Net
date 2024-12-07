@@ -58,6 +58,8 @@
             this.lblHangxuat = new System.Windows.Forms.Label();
             this.lblSohn = new System.Windows.Forms.Label();
             this.lblSohx = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTonkho = new System.Windows.Forms.Label();
             this.toolStripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -66,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_Body.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHanghoa)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -349,6 +352,8 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.Controls.Add(this.lblTonkho);
+            this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(708, 174);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 197);
@@ -444,6 +449,26 @@
             this.lblSohx.TabIndex = 2;
             this.lblSohx.Text = "..";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tồn kho";
+            // 
+            // lblTonkho
+            // 
+            this.lblTonkho.AutoSize = true;
+            this.lblTonkho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTonkho.Location = new System.Drawing.Point(3, 102);
+            this.lblTonkho.Name = "lblTonkho";
+            this.lblTonkho.Size = new System.Drawing.Size(26, 26);
+            this.lblTonkho.TabIndex = 3;
+            this.lblTonkho.Text = "..";
+            // 
             // Trangchu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -464,6 +489,8 @@
             this.panel_Body.ResumeLayout(false);
             this.panel_Body.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHanghoa)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -502,6 +529,8 @@
         private System.Windows.Forms.Label lblHangnhap;
         private System.Windows.Forms.Label lblSohn;
         private System.Windows.Forms.Label lblSohx;
+        private System.Windows.Forms.Label lblTonkho;
+        private System.Windows.Forms.Label label2;
     }
 }
 

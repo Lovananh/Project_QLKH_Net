@@ -110,32 +110,14 @@ namespace App_QLKH
 
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    // Lấy số lượng nhập và xuất mới từ Controller
-            //    var (tongNhap, tongXuat) = controller.LaySoLuongNhapXuat();
-
-            //    // Tìm các Label trong Panel
-            //    Label lblTongNhap = panel2.Controls["lblTongNhap"] as Label;
-            //    Label lblTongXuat = panel3.Controls["lblTongXuat"] as Label;
-
-            //    // Cập nhật dữ liệu cho các Label
-            //    if (lblTongNhap != null)
-            //        lblTongNhap.Text = $"Tổng số lượng nhập: {tongNhap}";
-
-            //    if (lblTongXuat != null)
-            //        lblTongXuat.Text = $"Tổng số lượng xuất: {tongXuat}";
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Lỗi khi lọc dữ liệu: {ex.Message}", "Lỗi");
-            //}
+           
 
             Hanghoa hanghoaModel = new Hanghoa();
             var (tongNhap, tongXuat) = hanghoaModel.GetSoLuongNhapXuat();
 
             lblSohn.Text = $"Số lượng nhập: {tongNhap}";
             lblSohx.Text = $"Số lượng xuất: {tongXuat}";
+            lblTonkho.Text = $"Số lượng tồn kho:{tongNhap - tongXuat}";
         }
 
         private void dataGridViewHanghoa_CellContentClick(object sender, DataGridViewCellEventArgs e)
