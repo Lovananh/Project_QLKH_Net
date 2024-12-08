@@ -30,11 +30,11 @@ namespace App_QLKH
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
         {
-            //if (currentFormChild != null && currentFormChild.GetType() == childForm.GetType())
-            //{
-            //    // Nếu form đang mở là cùng loại với form mới, thoát khỏi phương thức
-            //    return;
-            //}
+            if (currentFormChild != null && currentFormChild.GetType() == childForm.GetType())
+            {
+                // Nếu form đang mở là cùng loại với form mới, thoát khỏi phương thức
+                return;
+            }
 
             if (currentFormChild != null)
             {
@@ -43,7 +43,7 @@ namespace App_QLKH
 
             currentFormChild = childForm;
             childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None; ;
+            childForm.FormBorderStyle = FormBorderStyle.None; 
             childForm.Dock = DockStyle.Fill;
             panel_Body.Controls.Add(childForm);
             panel_Body.Tag = childForm;
@@ -89,7 +89,10 @@ namespace App_QLKH
 
         private void btnTrangchu_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Trangchu());
+            if (currentFormChild == null || currentFormChild.GetType() != typeof(Trangchu))
+            {
+                OpenChildForm(new Trangchu());
+            }
 
         }
 
@@ -110,32 +113,15 @@ namespace App_QLKH
 
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    // Lấy số lượng nhập và xuất mới từ Controller
-            //    var (tongNhap, tongXuat) = controller.LaySoLuongNhapXuat();
-
-            //    // Tìm các Label trong Panel
-            //    Label lblTongNhap = panel2.Controls["lblTongNhap"] as Label;
-            //    Label lblTongXuat = panel3.Controls["lblTongXuat"] as Label;
-
-            //    // Cập nhật dữ liệu cho các Label
-            //    if (lblTongNhap != null)
-            //        lblTongNhap.Text = $"Tổng số lượng nhập: {tongNhap}";
-
-            //    if (lblTongXuat != null)
-            //        lblTongXuat.Text = $"Tổng số lượng xuất: {tongXuat}";
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Lỗi khi lọc dữ liệu: {ex.Message}", "Lỗi");
-            //}
-
+            //loc
             Hanghoa hanghoaModel = new Hanghoa();
             var (tongNhap, tongXuat) = hanghoaModel.GetSoLuongNhapXuat();
 
             lblSohn.Text = $"Số lượng nhập: {tongNhap}";
             lblSohx.Text = $"Số lượng xuất: {tongXuat}";
+            lblTonkho.Text = $"Số lượng tồn kho:{tongNhap - tongXuat}";
+
+
         }
 
         private void dataGridViewHanghoa_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -148,6 +134,35 @@ namespace App_QLKH
             DataTable dtHanghoa = hanghoaModel.GetAllHanghoa();
 
             dataGridViewHanghoa.DataSource = dtHanghoa;
+        }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            string keyword = txtLoc.Text.Trim(); // Lấy từ khóa từ TextBox
+            Hanghoa hanghoaModel = new Hanghoa();
+            DataTable dtTimkiem;
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                // Nếu không nhập từ khóa, hiển thị toàn bộ dữ liệu
+                dtTimkiem = hanghoaModel.GetAllHanghoa();
+            }
+            else
+            {
+                // Tìm kiếm theo từ khóa
+                dtTimkiem = hanghoaModel.SearchHanghoa(keyword);
+            }
+
+            // Hiển thị dữ liệu trong DataGridView
+            if (dtTimkiem.Rows.Count > 0)
+            {
+                dataGridViewHanghoa.DataSource = dtTimkiem;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy hàng hóa nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridViewHanghoa.DataSource = null; // Xóa dữ liệu cũ trong DataGridView
+            }
         }
     }
 }
