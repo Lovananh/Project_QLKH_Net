@@ -115,12 +115,6 @@
     <Compile Include="View\fmNhanvien.Designer.cs">
       <DependentUpon>fmNhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fmNhaphang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\fmNhaphang.Designer.cs">
-      <DependentUpon>fmNhaphang.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Trangchu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,14 +137,14 @@
     <EmbeddedResource Include="View\fmBaocaosolieu.resx">
       <DependentUpon>fmBaocaosolieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\fmDangnhap.resx">
+      <DependentUpon>fmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\fmNhacungcap.resx">
       <DependentUpon>fmNhacungcap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fmNhanvien.resx">
       <DependentUpon>fmNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\fmNhaphang.resx">
-      <DependentUpon>fmNhaphang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>

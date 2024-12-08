@@ -164,5 +164,12 @@ namespace App_QLKH
                 dataGridViewHanghoa.DataSource = null; // Xóa dữ liệu cũ trong DataGridView
             }
         }
+
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new fmDangnhap().ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -64,5 +64,5 @@ D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\ru\Microsoft.ReportViewer.WinForms
 D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.Up2Date
-D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhaphang.resources
 D:\GITHUB\Project_QLKH_Net\App_QLKH\bin\Debug\ReportBaocaohanghoa.rdlc
+D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmDangnhap.resources
