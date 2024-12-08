@@ -16,10 +16,5 @@ namespace App_QLKH.View
         {
             InitializeComponent();
         }
-
-		private void fmDangky_Load(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }

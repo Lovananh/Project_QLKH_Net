@@ -16,25 +16,5 @@ namespace App_QLKH.View
         {
             InitializeComponent();
         }
-
-		private void panel2_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void panel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void fmDangnhap_Load(object sender, EventArgs e)
-		{
-
-		}
-
-		private void lblDangnhap_Click(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }

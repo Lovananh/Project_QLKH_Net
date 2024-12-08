@@ -82,18 +82,6 @@
     <Compile Include="View\fmNhanvien.Designer.cs">
       <DependentUpon>fmNhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmHangnhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmHangnhap.Designer.cs">
-      <DependentUpon>frmHangnhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmHangxuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmHangxuat.Designer.cs">
-      <DependentUpon>frmHangxuat.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Trangchu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,28 +97,15 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\fmBaocaosolieu.resx">
       <DependentUpon>fmBaocaosolieu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\fmDangky.resx">
-      <DependentUpon>fmDangky.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\fmDangnhap.resx">
-      <DependentUpon>fmDangnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fmNhacungcap.resx">
       <DependentUpon>fmNhacungcap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fmNhanvien.resx">
       <DependentUpon>fmNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmHangnhap.resx">
-      <DependentUpon>frmHangnhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmHangxuat.resx">
-      <DependentUpon>frmHangxuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>
@@ -166,7 +141,6 @@
     <Content Include="Icon\teamwork.png" />
     <Content Include="Icon\warehouse %281%29.png" />
     <Content Include="Icon\warehouse.png" />
-    <None Include="Resources\360_F_331371645_4hf8rHN0nkF4gflbHW94ONhf0PUlfBXZ.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
