@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace App_QLKH.View
 {
-    public partial class fmDangky : Form
-    {
-        public fmDangky()
-        {
-            InitializeComponent();
-        }
+	public partial class frmHangnhap : Form
+	{
+		public frmHangnhap()
+		{
+			InitializeComponent();
+		}
 
-		private void fmDangky_Load(object sender, EventArgs e)
+		private void frmHangnhap_Load(object sender, EventArgs e)
 		{
 
 		}

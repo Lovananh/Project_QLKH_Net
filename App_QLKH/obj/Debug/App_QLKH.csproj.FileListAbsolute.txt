@@ -11,3 +11,16 @@ D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.pdb
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhanvien.resources
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhacungcap.resources
 D:\GITHUB\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmBaocaosolieu.resources
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\bin\Debug\App_QLKH.exe.config
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\bin\Debug\App_QLKH.exe
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\bin\Debug\App_QLKH.pdb
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmBaocaosolieu.resources
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhacungcap.resources
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.View.fmNhanvien.resources
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.Trangchu.resources
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.exe
+C:\Users\USER\Documents\GitHub\Project_QLKH_Net\App_QLKH\obj\Debug\App_QLKH.pdb

@@ -103,5 +103,10 @@ namespace App_QLKH
         {
             //OpenChildForm(new fmKhohang());
         }
-    }
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+	}
 }
