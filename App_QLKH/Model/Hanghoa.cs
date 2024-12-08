@@ -43,7 +43,32 @@ namespace App_QLKH.Model
             return dataTable;
         }
 
-      
+        public DataTable SearchHanghoa(string keyword)
+        {
+            DataTable dt = new DataTable();
+            string query = @"
+            SELECT 
+                h.Mahang, h.Tenhang, h.Soluong, h.Gia, h.Donvitinh,
+                hn.Ngaynhap, hx.Ngayxuat, pn.Soluongtn, px.Soluongxuat
+            FROM HangHoa h
+            LEFT JOIN PhieuNhap pn ON h.Mahang = pn.Mahang
+            LEFT JOIN HangNhap hn ON pn.Sophieunhap = hn.Sophieunhap
+            LEFT JOIN PhieuXuat px ON h.Mahang = px.Mahang
+            LEFT JOIN HangXuat hx ON px.Sophieuxuat = hx.Sophieuxuat
+            WHERE h.Tenhang LIKE @Keyword";
+
+            using (SqlConnection conn = kn.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+
+            return dt;
+        }
+
         public (int TongNhap, int TongXuat) GetSoLuongNhapXuat()
         {
             int tongNhap = 0;

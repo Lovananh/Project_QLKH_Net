@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trangchu));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.toolNhacungcap = new System.Windows.Forms.ToolStripButton();
             this.toolNhanvien = new System.Windows.Forms.ToolStripButton();
@@ -42,24 +42,24 @@
             this.btnNhanvien = new System.Windows.Forms.Button();
             this.btnHangxuat = new System.Windows.Forms.Button();
             this.btnHangnhap = new System.Windows.Forms.Button();
-            this.btnKhohang = new System.Windows.Forms.Button();
             this.btnHanghoa = new System.Windows.Forms.Button();
             this.btnTrangchu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_Body = new System.Windows.Forms.Panel();
             this.dataGridViewHanghoa = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLoc = new System.Windows.Forms.Button();
-            this.txtBLoc = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblHangnhap = new System.Windows.Forms.Label();
-            this.lblHangxuat = new System.Windows.Forms.Label();
-            this.lblSohn = new System.Windows.Forms.Label();
-            this.lblSohx = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblTonkho = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSohx = new System.Windows.Forms.Label();
+            this.lblHangxuat = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSohn = new System.Windows.Forms.Label();
+            this.lblHangnhap = new System.Windows.Forms.Label();
+            this.btnLoc = new System.Windows.Forms.Button();
+            this.txtLoc = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnTimkiem = new System.Windows.Forms.Button();
             this.toolStripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -133,7 +133,6 @@
             this.splitContainer1.Panel1.Controls.Add(this.btnNhanvien);
             this.splitContainer1.Panel1.Controls.Add(this.btnHangxuat);
             this.splitContainer1.Panel1.Controls.Add(this.btnHangnhap);
-            this.splitContainer1.Panel1.Controls.Add(this.btnKhohang);
             this.splitContainer1.Panel1.Controls.Add(this.btnHanghoa);
             this.splitContainer1.Panel1.Controls.Add(this.btnTrangchu);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
@@ -154,7 +153,7 @@
             this.btnDangxuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 619);
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 559);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(219, 60);
             this.btnDangxuat.TabIndex = 9;
@@ -169,7 +168,7 @@
             this.btnBaocaosolieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnBaocaosolieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaocaosolieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaocaosolieu.Location = new System.Drawing.Point(0, 559);
+            this.btnBaocaosolieu.Location = new System.Drawing.Point(0, 499);
             this.btnBaocaosolieu.Name = "btnBaocaosolieu";
             this.btnBaocaosolieu.Size = new System.Drawing.Size(219, 60);
             this.btnBaocaosolieu.TabIndex = 8;
@@ -185,7 +184,7 @@
             this.btnNhacungcap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnNhacungcap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhacungcap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhacungcap.Location = new System.Drawing.Point(0, 499);
+            this.btnNhacungcap.Location = new System.Drawing.Point(0, 439);
             this.btnNhacungcap.Name = "btnNhacungcap";
             this.btnNhacungcap.Size = new System.Drawing.Size(219, 60);
             this.btnNhacungcap.TabIndex = 7;
@@ -201,7 +200,7 @@
             this.btnNhanvien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnNhanvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhanvien.Location = new System.Drawing.Point(0, 439);
+            this.btnNhanvien.Location = new System.Drawing.Point(0, 379);
             this.btnNhanvien.Name = "btnNhanvien";
             this.btnNhanvien.Size = new System.Drawing.Size(219, 60);
             this.btnNhanvien.TabIndex = 6;
@@ -217,7 +216,7 @@
             this.btnHangxuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnHangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHangxuat.Location = new System.Drawing.Point(0, 379);
+            this.btnHangxuat.Location = new System.Drawing.Point(0, 319);
             this.btnHangxuat.Name = "btnHangxuat";
             this.btnHangxuat.Size = new System.Drawing.Size(219, 60);
             this.btnHangxuat.TabIndex = 5;
@@ -233,29 +232,13 @@
             this.btnHangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnHangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHangnhap.Location = new System.Drawing.Point(0, 319);
+            this.btnHangnhap.Location = new System.Drawing.Point(0, 259);
             this.btnHangnhap.Name = "btnHangnhap";
             this.btnHangnhap.Size = new System.Drawing.Size(219, 60);
             this.btnHangnhap.TabIndex = 4;
             this.btnHangnhap.Text = "Hàng nhập";
             this.btnHangnhap.UseVisualStyleBackColor = true;
             this.btnHangnhap.Click += new System.EventHandler(this.btnHangnhap_Click);
-            // 
-            // btnKhohang
-            // 
-            this.btnKhohang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKhohang.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnKhohang.FlatAppearance.BorderSize = 0;
-            this.btnKhohang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnKhohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhohang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhohang.Location = new System.Drawing.Point(0, 259);
-            this.btnKhohang.Name = "btnKhohang";
-            this.btnKhohang.Size = new System.Drawing.Size(219, 60);
-            this.btnKhohang.TabIndex = 3;
-            this.btnKhohang.Text = "Kho hàng";
-            this.btnKhohang.UseVisualStyleBackColor = true;
-            this.btnKhohang.Click += new System.EventHandler(this.btnKhohang_Click);
             // 
             // btnHanghoa
             // 
@@ -303,12 +286,13 @@
             // 
             // panel_Body
             // 
+            this.panel_Body.Controls.Add(this.btnTimkiem);
             this.panel_Body.Controls.Add(this.dataGridViewHanghoa);
             this.panel_Body.Controls.Add(this.panel4);
             this.panel_Body.Controls.Add(this.panel3);
             this.panel_Body.Controls.Add(this.panel2);
             this.panel_Body.Controls.Add(this.btnLoc);
-            this.panel_Body.Controls.Add(this.txtBLoc);
+            this.panel_Body.Controls.Add(this.txtLoc);
             this.panel_Body.Controls.Add(this.label1);
             this.panel_Body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Body.Location = new System.Drawing.Point(0, 0);
@@ -323,24 +307,24 @@
             this.dataGridViewHanghoa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewHanghoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewHanghoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewHanghoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewHanghoa.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewHanghoa.Location = new System.Drawing.Point(87, 397);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewHanghoa.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewHanghoa.Location = new System.Drawing.Point(96, 439);
             this.dataGridViewHanghoa.Name = "dataGridViewHanghoa";
             this.dataGridViewHanghoa.ReadOnly = true;
             this.dataGridViewHanghoa.RowHeadersWidth = 62;
@@ -354,34 +338,94 @@
             this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel4.Controls.Add(this.lblTonkho);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(708, 174);
+            this.panel4.Location = new System.Drawing.Point(708, 139);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 197);
             this.panel4.TabIndex = 14;
+            // 
+            // lblTonkho
+            // 
+            this.lblTonkho.AutoSize = true;
+            this.lblTonkho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTonkho.Location = new System.Drawing.Point(3, 102);
+            this.lblTonkho.Name = "lblTonkho";
+            this.lblTonkho.Size = new System.Drawing.Size(26, 26);
+            this.lblTonkho.TabIndex = 3;
+            this.lblTonkho.Text = "..";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tồn kho";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel3.Controls.Add(this.lblSohx);
             this.panel3.Controls.Add(this.lblHangxuat);
-            this.panel3.Location = new System.Drawing.Point(414, 174);
+            this.panel3.Location = new System.Drawing.Point(414, 139);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(246, 194);
             this.panel3.TabIndex = 13;
+            // 
+            // lblSohx
+            // 
+            this.lblSohx.AutoSize = true;
+            this.lblSohx.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSohx.Location = new System.Drawing.Point(13, 102);
+            this.lblSohx.Name = "lblSohx";
+            this.lblSohx.Size = new System.Drawing.Size(26, 26);
+            this.lblSohx.TabIndex = 2;
+            this.lblSohx.Text = "..";
+            // 
+            // lblHangxuat
+            // 
+            this.lblHangxuat.AutoSize = true;
+            this.lblHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHangxuat.Location = new System.Drawing.Point(23, 25);
+            this.lblHangxuat.Name = "lblHangxuat";
+            this.lblHangxuat.Size = new System.Drawing.Size(134, 29);
+            this.lblHangxuat.TabIndex = 1;
+            this.lblHangxuat.Text = "Hàng Xuất";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.Controls.Add(this.lblSohn);
             this.panel2.Controls.Add(this.lblHangnhap);
-            this.panel2.Location = new System.Drawing.Point(96, 174);
+            this.panel2.Location = new System.Drawing.Point(96, 139);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 194);
             this.panel2.TabIndex = 12;
             // 
+            // lblSohn
+            // 
+            this.lblSohn.AutoSize = true;
+            this.lblSohn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSohn.Location = new System.Drawing.Point(16, 102);
+            this.lblSohn.Name = "lblSohn";
+            this.lblSohn.Size = new System.Drawing.Size(26, 26);
+            this.lblSohn.TabIndex = 1;
+            this.lblSohn.Text = "..";
+            // 
+            // lblHangnhap
+            // 
+            this.lblHangnhap.AutoSize = true;
+            this.lblHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHangnhap.Location = new System.Drawing.Point(16, 25);
+            this.lblHangnhap.Name = "lblHangnhap";
+            this.lblHangnhap.Size = new System.Drawing.Size(143, 29);
+            this.lblHangnhap.TabIndex = 0;
+            this.lblHangnhap.Text = "Hàng Nhập";
+            // 
             // btnLoc
             // 
-            this.btnLoc.Location = new System.Drawing.Point(523, 108);
+            this.btnLoc.Location = new System.Drawing.Point(96, 74);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(75, 37);
             this.btnLoc.TabIndex = 11;
@@ -389,12 +433,12 @@
             this.btnLoc.UseVisualStyleBackColor = true;
             this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
-            // txtBLoc
+            // txtLoc
             // 
-            this.txtBLoc.Location = new System.Drawing.Point(96, 113);
-            this.txtBLoc.Name = "txtBLoc";
-            this.txtBLoc.Size = new System.Drawing.Size(377, 26);
-            this.txtBLoc.TabIndex = 10;
+            this.txtLoc.Location = new System.Drawing.Point(96, 379);
+            this.txtLoc.Name = "txtLoc";
+            this.txtLoc.Size = new System.Drawing.Size(377, 26);
+            this.txtLoc.TabIndex = 10;
             // 
             // label1
             // 
@@ -409,65 +453,15 @@
             this.label1.Text = "Trang chủ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblHangnhap
+            // btnTimkiem
             // 
-            this.lblHangnhap.AutoSize = true;
-            this.lblHangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHangnhap.Location = new System.Drawing.Point(16, 25);
-            this.lblHangnhap.Name = "lblHangnhap";
-            this.lblHangnhap.Size = new System.Drawing.Size(143, 29);
-            this.lblHangnhap.TabIndex = 0;
-            this.lblHangnhap.Text = "Hàng Nhập";
-            // 
-            // lblHangxuat
-            // 
-            this.lblHangxuat.AutoSize = true;
-            this.lblHangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHangxuat.Location = new System.Drawing.Point(23, 25);
-            this.lblHangxuat.Name = "lblHangxuat";
-            this.lblHangxuat.Size = new System.Drawing.Size(134, 29);
-            this.lblHangxuat.TabIndex = 1;
-            this.lblHangxuat.Text = "Hàng Xuất";
-            // 
-            // lblSohn
-            // 
-            this.lblSohn.AutoSize = true;
-            this.lblSohn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSohn.Location = new System.Drawing.Point(16, 102);
-            this.lblSohn.Name = "lblSohn";
-            this.lblSohn.Size = new System.Drawing.Size(26, 26);
-            this.lblSohn.TabIndex = 1;
-            this.lblSohn.Text = "..";
-            // 
-            // lblSohx
-            // 
-            this.lblSohx.AutoSize = true;
-            this.lblSohx.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSohx.Location = new System.Drawing.Point(13, 102);
-            this.lblSohx.Name = "lblSohx";
-            this.lblSohx.Size = new System.Drawing.Size(26, 26);
-            this.lblSohx.TabIndex = 2;
-            this.lblSohx.Text = "..";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tồn kho";
-            // 
-            // lblTonkho
-            // 
-            this.lblTonkho.AutoSize = true;
-            this.lblTonkho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTonkho.Location = new System.Drawing.Point(3, 102);
-            this.lblTonkho.Name = "lblTonkho";
-            this.lblTonkho.Size = new System.Drawing.Size(26, 26);
-            this.lblTonkho.TabIndex = 3;
-            this.lblTonkho.Text = "..";
+            this.btnTimkiem.Location = new System.Drawing.Point(496, 368);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(112, 37);
+            this.btnTimkiem.TabIndex = 16;
+            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // Trangchu
             // 
@@ -513,7 +507,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnLoc;
-        private System.Windows.Forms.TextBox txtBLoc;
+        private System.Windows.Forms.TextBox txtLoc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDangxuat;
@@ -522,7 +516,6 @@
         private System.Windows.Forms.Button btnNhanvien;
         private System.Windows.Forms.Button btnHangxuat;
         private System.Windows.Forms.Button btnHangnhap;
-        private System.Windows.Forms.Button btnKhohang;
         private System.Windows.Forms.Button btnHanghoa;
         private System.Windows.Forms.Button btnTrangchu;
         private System.Windows.Forms.Label lblHangxuat;
@@ -531,6 +524,7 @@
         private System.Windows.Forms.Label lblSohx;
         private System.Windows.Forms.Label lblTonkho;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnTimkiem;
     }
 }
 
