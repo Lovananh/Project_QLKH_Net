@@ -16,5 +16,10 @@ namespace App_QLKH.View
         {
             InitializeComponent();
         }
-    }
+
+		private void lblNhapvaxuathang_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

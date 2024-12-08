@@ -16,5 +16,17 @@ namespace App_QLKH.View
         {
             InitializeComponent();
         }
-    }
+
+		private void btnDangky_Click(object sender, EventArgs e)
+		{
+
+		}
+		
+		private void btnThoat_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			new fmDangnhap().ShowDialog();
+			this.Close();
+		}
+	}
 }
