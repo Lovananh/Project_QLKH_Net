@@ -19,7 +19,7 @@ namespace App_QLKH.View
 
 		private void fmDangky_Load(object sender, EventArgs e)
 		{
-
+            //
 		}
 	}
 }
